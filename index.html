@@ -5,11 +5,183 @@
     <title>Mimi's Webpage</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
     </head>
     <body>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#home">
+              <img class="logo-img" src="assets/logo/logo.png" alt="Logo">
+            </a>
+          </div>
+          <ul class="topnav" id="navbar-toggle">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#products" class="nav-link">Services</a></li>
+            <li><a href="#projects" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="dropdownLink">
+              <a onClick="toggleDropdown()" href="javascript:void(0)">&#9776;</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="services" id="products">
+          <div class="container">
+            <div class="media-object">
+              <div class="icon-left">
+                <img class="icon" src="assets/light.jpg" alt="graph chart">
+              </div>
+              <div class="blurb-wrapper-right">
+                <h3 class="blurb-header">Great projects</h3>
+                <div class="blurb-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                  nisi ut aliquip ex ea commodo consequat. 
+                </div>
+              </div>
+            </div>
+            <div class="media-object">
+              <div class="icon-right">
+                <img class="icon" src="assets/light-bulb2.jpg" alt="graph chart">
+              </div>
+              <div class="blurb-wrapper-left">
+                <h3 class="blurb-header">Great work experience</h3>
+                <div class="blurb-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                  nisi ut aliquip ex ea commodo consequat. 
+                </div>
+              </div>
+            </div>
+            <div class="media-object">
+              <div class="icon-left">
+                <img class="icon" src="assets/electrician.jpg" alt="graph chart">
+              </div>
+              <div class="blurb-wrapper-right">
+                <h3 class="blurb-header">6 months of support</h3>
+                <div class="blurb-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                  nisi ut aliquip ex ea commodo consequat.  
+                </div>
+              </div>
+            </div>
+      
+            <div class="main-btn-wrapper">
+              <button class="main-btn">Details</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio" id="projects">
+          <div class="container">
+            <div class="section-header">
+              <h1 class="header">Previous Works</h1>
+            </div>
+           <div class="portfolio-wrapper">
+            <div class="portfolio-object">
+              <div class="portfolio-box"></div>
+              <h4>Project</h4>
+              <div class="portfolio-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+      
+            <div class="portfolio-object">
+              <div class="portfolio-box"></div>
+              <h4>Project</h4>
+              <div class="portfolio-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="portfolio-object">
+              <div class="portfolio-box"></div>
+              <h4>Project</h4>
+              <div class="portfolio-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="portfolio-object">
+              <div class="portfolio-box"></div>
+              <h4>Project</h4>
+              <div class="portfolio-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="portfolio-object">
+              <div class="portfolio-box"></div>
+              <h4>Project</h4>
+              <div class="portfolio-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="portfolio-object">
+              <div class="portfolio-box"></div>
+              <h4>Project</h4>
+              <div class="portfolio-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="portfolio-object">
+              <div class="portfolio-box"></div>
+              <h4>Project</h4>
+              <div class="portfolio-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="portfolio-object">
+              <div class="portfolio-box"></div>
+              <h4>Project</h4>
+              <div class="portfolio-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+           </div>
+          </div>
+        </section>
+
+        <section class="contact-container" id="contact">
+          <div class="container">
+            <div class="section-header">
+              <h1>Contact us</h1>
+            </div>
+            <form action="">
+              <label for="email">*email</label>
+              <div class="form-group">
+                <input class="form-control" type="email" id="email">
+              </div>
+              <label for="name">*name</label>
+              <div class="form-group"> 
+                <input class="form-control" type="text" id="name">
+              </div>
+              <label for="message">*message</label>
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="6"></textarea>
+              </div>
+              <div class="submit-btn-wrapper">
+                <button class="main-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      
       
         
-      <script src="" async defer></script>
+
+
+
+      <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
