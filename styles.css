@@ -9,6 +9,10 @@ html, body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+  }
+
 .navbar, 
 .container, 
 .services, 
